@@ -1,4 +1,4 @@
-#Final Project Day 1
+#Final Project Day 1 - Band Name Generator
 #11st October 2024
 #Her link: https://appbrewery.github.io/python-day1-demo/
 

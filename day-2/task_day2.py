@@ -86,3 +86,28 @@ print(3 * 3 + 3 / 3 - 3) # =7
 #Change the code so it outputs 3
 #(3 * 3 + 3 / 3 - 3)
 print(3 * (3 + 3) / 3 - 3)
+
+#Number Manipulation - How to round number
+#function: round(number, ndigits)
+bmi = 24.151672503320853
+print("Your BMI is: " + str(round(bmi, 3)))
+print("Your BMI is: " + str(round(bmi)))
+
+#Score
+score = 0
+
+#User scores a point
+score += 1
+print (score)
+
+print("Your score is " + str(score))
+
+#To not need to convert all the variables to string, we can use f-Strings
+#syntax: print(f"My name is {name}")
+#The 'f' needs to be between the first parentheses and the first quote
+#The variables should be between {}
+score = 0
+height = 1.8
+is_winning = True
+
+print(f"Your score is {score}, your height is {height}. You are winning is {is_winning}")

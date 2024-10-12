@@ -11,15 +11,18 @@ Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 
 ## Main Functions
 PRINT = `print()`  
+PRINT FORMATTED (f-Strings)= `print(f"I am {age} years old")` 
 INPUT = `input()`  
 LENGTH = `len()`  
 TO INT = `int()`  
 TO STR = `str()`  
 TO FLOAT = `float()`  
 TO BOOLEAN = `bool()`  
+ROUND A NUMBER = `round(number, ndigits)`
 
 ## Mathematical Operators
 ADDITION: `+`  
+ADDITION OF ACTUAL VALUE: `+=`
 SUBTRACTION: `-`  
 MULTIPLICAÇÃO: `*`  
 DIVISÃO: `/` (sempre vai ser 'float')  
