@@ -2,9 +2,9 @@
 Printing, Comenting, Debugging, String Manipulation and Variables
 
 ### Main Functions Used
-PRINT = print()
-INPUT = input()
-LENGTH = len()
+PRINT = `print()`  
+INPUT = `input()`  
+LENGTH = `len()`
 
 ### Final Project
 Band Name Generator

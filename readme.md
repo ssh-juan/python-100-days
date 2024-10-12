@@ -10,21 +10,21 @@ Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 4. Booleans
 
 ## Main Functions
-PRINT = print()
-INPUT = input()
-LENGTH = len()
-TO INT = int()
-TO STR = str()
-TO FLOAT = float()
-TO BOOLEAN = bool()
+PRINT = `print()`  
+INPUT = `input()`  
+LENGTH = `len()`  
+TO INT = `int()`  
+TO STR = `str()`  
+TO FLOAT = `float()`  
+TO BOOLEAN = `bool()`  
 
 ## Mathematical Operators
-ADDITION: +
-SUBTRACTION: -
-MULTIPLICAÇÃO: *
-DIVISÃO: / (sempre vai ser 'float')
-DIVISÃO: // (remove todas as casas após a vírgulas, vira um 'int')
-POTENCIAÇÃO: **
+ADDITION: `+`  
+SUBTRACTION: `-`  
+MULTIPLICAÇÃO: `*`  
+DIVISÃO: `/` (sempre vai ser 'float')  
+DIVISÃO: `//` (remove todas as casas após a vírgulas, vira um 'int')  
+POTENCIAÇÃO: `**`
 
 There's a tip for an IDE called "Thonny". It helps to debug code easier.
 
