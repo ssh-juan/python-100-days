@@ -1,7 +1,13 @@
 # My Studies about Python
-Following Angela Yu's course
+Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 
 ### "Our brain is for thinking, not for storing"
+
+### Python Primitive Data Types
+1. Strings
+2. Integers
+3. Floats
+4. Booleans
 
 ## Main Functions
 PRINT = print()
