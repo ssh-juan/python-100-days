@@ -12,13 +12,29 @@ Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 ## Main Functions
 PRINT = `print()`  
 PRINT FORMATTED (f-Strings)= `print(f"I am {age} years old")` 
-INPUT = `input()`  
+INPUT = `input()`  (Obs.: the input will always be a String)
 LENGTH = `len()`  
 TO INT = `int()`  
 TO STR = `str()`  
 TO FLOAT = `float()`  
 TO BOOLEAN = `bool()`  
 ROUND A NUMBER = `round(number, ndigits)`
+```python
+#Indentation is crucial in Python
+if condition:
+    do this
+else:
+    do this
+```
+```python
+if condition:
+    if another condition:
+        do this
+    else:
+        do this
+else:
+    do this
+```
 
 ## Mathematical Operators
 ADDITION: `+`  
@@ -28,9 +44,21 @@ MULTIPLICAÇÃO: `*`
 DIVISÃO: `/` (sempre vai ser 'float')  
 DIVISÃO: `//` (remove todas as casas após a vírgulas, vira um 'int')  
 POTENCIAÇÃO: `**`
+REMAINDER: `%` (Check the remainder, how many is remaining after that division)
 
-There's a tip for an IDE called "Thonny". It helps to debug code easier.
+## Comparison Operators
+| Operator | Meaning |
+| --- | --- |
+| > | Greater Than |
+| < | Less Than |
+| >= | Greater than or Equal to |
+| <= | Less than or Equal to |
+| == | Equal to |
+| != | Not Equal to |
+
+### There's a tip for an IDE called "Thonny". It helps to debug code easier.
 
 ## Projects
 1. Band Name Generator
 2. Tip Calculator
+3. Choose your own adventure - Game
