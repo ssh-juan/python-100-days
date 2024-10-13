@@ -20,18 +20,18 @@ TO FLOAT = `float()`
 TO BOOLEAN = `bool()`  
 ROUND A NUMBER = `round(number, ndigits)`
 ```python
-#Indentation is crucial in Python
+#Indentation is crucial in Python for conditionals
 if condition:
     do this
 else:
     do this
 ```
 ```python
+#Indentation is crucial in Python for conditionals
 if condition:
-    if another condition:
-        do this
-    else:
-        do this
+    do this
+elif another condition:
+    do this
 else:
     do this
 ```

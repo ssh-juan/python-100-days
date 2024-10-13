@@ -10,10 +10,9 @@ else:
 ```
 ```python
 if condition:
-    if another condition:
-        do this
-    else:
-        do this
+    do this
+elif another condition:
+    do this
 else:
     do this
 ```
