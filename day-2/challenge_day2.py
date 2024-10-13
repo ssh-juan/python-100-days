@@ -3,16 +3,13 @@
 #Her link: https://appbrewery.github.io/python-day2-demo/
 
 print("Welcome to the tip calculator!")
-total_bill = input("What was the total bill? $")
-tip = input("How much tip would you like to give: 10%, 12% or 15%? $")
-people = input("How many people to spit the bill? ")
+total_bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give: 10, 12 or 15 (percent)? $"))
+people = int(input("How many people to spit the bill? "))
 
-#turning tip from integer to percentage
-tip_percentage = int(tip) / int(100)
-tip_calculated = float(total_bill) * float(tip_percentage)
+#calculating total bill + tip
+total_value = total_bill * (1 + tip / 100)
+value_per_person = total_value / people
 
-total_value = float(total_bill) + float(tip_calculated)
-value_per_person = float(total_value) / int(people)
-
-print(f"The total is: ${total_value}")
+print(f"The total is: ${round(total_value, 2)}")
 print(f"Each person should pay: ${round(value_per_person, 2)}")
