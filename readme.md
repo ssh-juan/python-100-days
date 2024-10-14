@@ -19,7 +19,7 @@ Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 - TO FLOAT = `float()`  
 - TO BOOLEAN = `bool()`  
 - ROUND A NUMBER = `round(number, ndigits)`  
-- CONVERT TO LOWERCASE = `.lower()` (Example: input().lower())  
+- CONVERT TO LOWERCASE = `.lower()` (Example: `input().lower()`)  
 ```python
 #Indentation is crucial in Python for conditionals
 if condition:
@@ -62,6 +62,9 @@ else:
 | == | Equal to |
 | != | Not Equal to |
 
+## Main Libraries Used
+- `random` - Randomisation
+
 ## Useful Tips
 - There's a tip for an IDE called "Thonny". It helps to debug code easier for newbies.
 - [ASCII Art Generator](https://ascii.co.uk/art)
@@ -70,3 +73,4 @@ else:
 1. Band Name Generator
 2. Tip Calculator
 3. Treasure Island - Game
+4. Rock-Paper-Scissors - Game
