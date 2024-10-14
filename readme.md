@@ -18,8 +18,8 @@ TO INT = `int()`
 TO STR = `str()`  
 TO FLOAT = `float()`  
 TO BOOLEAN = `bool()`  
-ROUND A NUMBER = `round(number, ndigits)`
-CONVERT TO LOWERCASE = `.lower()` (Example: input().lower())
+ROUND A NUMBER = `round(number, ndigits)`  
+CONVERT TO LOWERCASE = `.lower()` (Example: input().lower())  
 ```python
 #Indentation is crucial in Python for conditionals
 if condition:
@@ -39,7 +39,7 @@ else:
 
 ## Mathematical Operators
 ADDITION: `+`  
-ADDITION OF ACTUAL VALUE: `+=`
+ADDITION OF ACTUAL VALUE: `+=`  
 SUBTRACTION: `-`  
 MULTIPLICAÇÃO: `*`  
 DIVISÃO: `/` (sempre vai ser 'float')  
@@ -48,9 +48,9 @@ POTENCIAÇÃO: `**`
 REMAINDER: `%` (Check the remainder, how many is remaining after that division)  
 
 ## Conditional Operators
-AND - `and`
-OR - `or`
-NOT - `not`
+AND - `and`  
+OR - `or`  
+NOT - `not`  
 
 ## Comparison Operators
 | Operator | Meaning |
