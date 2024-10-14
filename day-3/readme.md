@@ -9,6 +9,7 @@ else:
     do this
 ```
 ```python
+#Indentation is crucial in Python for conditionals
 if condition:
     do this
 elif another condition:
@@ -17,6 +18,12 @@ else:
     do this
 ```
 REMAINDER: `%` (Check the remainder, how many is remaining after that division)
+CONVERT TO LOWERCASE = `.lower()` (Example: input().lower())
+
+## Conditional Operators
+AND - `and`
+OR - `or`
+NOT - `not`
 
 ## Comparison Operators
 | Operator | Meaning |
@@ -29,4 +36,4 @@ REMAINDER: `%` (Check the remainder, how many is remaining after that division)
 | != | Not Equal to |
 
 ### FINAL PROJECT
-Choose your own adventure - Game
+Treasure Island - Game
