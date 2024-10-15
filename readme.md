@@ -20,6 +20,10 @@ Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 - TO BOOLEAN = `bool()`  
 - ROUND A NUMBER = `round(number, ndigits)`  
 - CONVERT TO LOWERCASE = `.lower()` (Example: `input().lower()`)  
+- Lists - `fruits = [item1, item2]`
+- ADD ONE ITEM IN A LIST = `.append()` (Example: `states_of_usa.append("New Jersey")`)
+- ADD SOME ITEMS IN A LIST = `.extend()` (Example: `states_of_usa.extend(["Georgia","Connecticut"])`)
+    - **List x Array** = A List is more flexible and can have multiple types of data (int, str, float, etc). An array is more restricted and can only have one type of data.
 ```python
 #Indentation is crucial in Python for conditionals
 if condition:
@@ -64,6 +68,10 @@ else:
 
 ## Main Libraries Used
 - `random` - Randomisation
+- RANDOM CHOICE ON A LIST = `random.choice(list_name)`
+- RANDOM INTEGER = `random.randint(a, b)` Range from 'a' to 'b'
+- RANDOM FLOAT INTERVAL = `random.uniform(a, b)` Range from 'a' to 'b'
+- RANDOM FLOAT 0 TO 1 = `random.random()` Range from 0 to 1
 
 ## Useful Tips
 - There's a tip for an IDE called "Thonny". It helps to debug code easier for newbies.
@@ -71,6 +79,12 @@ else:
 
 ## Projects
 1. Band Name Generator
+    - Printing, Commenting, Debugging, String Manipulation and Variables
 2. Tip Calculator
+    - Data Types, Numbers, Operations, Type Conversion, f-string
 3. Treasure Island - Game
+    - Conditional Statements, Logical Operators, Code Blocks and Scope
 4. Rock-Paper-Scissors - Game
+    - Randomisation and Python Lists
+5. Password Generator
+    - For Loops, Range and Code Block
