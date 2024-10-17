@@ -2,8 +2,8 @@
 Functions, Code Blocks and While Loops
 
 ## Function
-[Functions Documentation](https://docs.python.org/3/library/functions.html)
 - `def` - Defining Functions - we use
+    - [Functions Documentation](https://docs.python.org/3/library/functions.html)
 ```python
 def my_function():
     #Do this
@@ -21,4 +21,4 @@ while something_is_true:
         - While loops are more dangerous, due to possible Infinite Loops.
 
 ### Final Project
-Escaping the Maze - Reeborg's World
+Escaping the Maze - Reeborg's World 
