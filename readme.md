@@ -40,17 +40,19 @@ elif another condition:
 else:
     do this
 ```
-- FOR LOOP FOR LISTS
+- FOR LOOPS - There are 2 types of 'for' loops: 'for' using lists and 'for' using range
+1. FOR LISTS
 ```python
 for item in list_of_items:
     #do something
     #for the 'item', we give a name for a single item
 ```
-- RANGE - `range(a, b, c)`
+2. RANGE - `range(a, b, c)`
     - Creates a range from 'a' to 'b' (obs.: **NOT INCLUDING** the last number 'b'). Has to be used in conjunction with another function.
     - 'c' is optional. Is a "step" function that will jump characters from the number you input in.
         - Example: `range(1, 10, 3)` - It will steps 3 by 3. Result will be: `1, 4, 7, 10`
-- FOR LOOP WITH RANGE
+
+  - FOR LOOP WITH RANGE
 ```python
 for number in range(a, b)
     print(number)
@@ -64,6 +66,7 @@ for number in range(a, b)
 - ADDITION: `+`  
 - ADDITION OF ACTUAL VALUE: `+=`  
 - SUBTRACTION: `-`  
+- SUBTRACTION OF ACTUAL VALUE: `-=`  
 - MULTIPLICAÇÃO: `*`  
 - DIVISÃO: `/` (sempre vai ser 'float')  
 - DIVISÃO: `//` (remove todas as casas após a vírgulas, vira um 'int')  
@@ -108,3 +111,5 @@ for number in range(a, b)
     - Randomisation and Python Lists
 5. Password Generator
     - For Loops, Range and Code Block
+6. Escaping the Maze - Reeborg's World
+    - Functions, Code Blocks and While Loops
