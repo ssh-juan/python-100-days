@@ -61,7 +61,7 @@ for number in range(a, b)
     - Get the sum from a List
 - MAX - `max()`
     - Get the maximum value from a List
-- `def` - Defining Functions - we use
+- `def` - Defining Functions
     - [Functions Documentation](https://docs.python.org/3/library/functions.html)
 ```python
 def my_function():
@@ -130,3 +130,4 @@ while something_is_true:
     - For Loops, Range and Code Block
 6. Escaping the Maze - Reeborg's World
     - Functions, Code Blocks and While Loops
+7. Hangman Project
