@@ -10,6 +10,21 @@ def my_function(something):
     #Then do this
     #Finally do this
 ```
+- Functions with Multiple Inputs
+```python
+def my_function(a, b, c):
+    #Do this with 'a'
+    #Then do this with 'b'
+    #Finally do this 'c'
+```
+- COUNT - `count()`
+    - Return the number of times the value appears in the **list**.
+```python
+#Counts how many times '9' appears in the list
+points = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+
+x = points.count(9)
+```
 
 ### Final Project
 Caesar Cipher
