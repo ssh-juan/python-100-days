@@ -18,6 +18,14 @@ Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 - TO STR = `str()`  
 - TO FLOAT = `float()`  
 - TO BOOLEAN = `bool()`  
+- COUNT - `count()`
+    - Return the number of times the value appears in the **list**.
+```python
+#Counts how many times '9' appears in the list
+points = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+
+x = points.count(9)
+```
 - ROUND A NUMBER = `round(number, ndigits)`  
 - CONVERT TO LOWERCASE = `.lower()` (Example: `input().lower()`)  
 - Lists - `fruits = [item1, item2]`
@@ -69,6 +77,21 @@ def my_function():
     #Then do this
     #Finally do this
 ```
+- Functions with Inputs
+    - In the example below `something` is the **Parameter**, and it's value inputted is **Argument** (the value of data)
+```python
+def my_function(something):
+    #Do this with something
+    #Then do this
+    #Finally do this
+```
+- Functions with Multiple Inputs
+```python
+def my_function(a, b, c):
+    #Do this with 'a'
+    #Then do this with 'b'
+    #Finally do this 'c'
+```
 - WHILE LOOP
 ```python
 while something_is_true:
@@ -89,6 +112,7 @@ while something_is_true:
 - DIVISÃO: `//` (remove todas as casas após a vírgulas, vira um 'int')  
 - POTENCIAÇÃO: `**`  
 - REMAINDER: `%` (Check the remainder, how many is remaining after that division)  
+- MODULO EQUALS - `%=`
 
 ## Conditional Operators
 - AND - `and`  
@@ -131,3 +155,6 @@ while something_is_true:
 6. Escaping the Maze - Reeborg's World
     - Functions, Code Blocks and While Loops
 7. Hangman Project
+    - Flow chart programming
+8. Caesar Cipher
+    - Functions with Inputs, Parameters and Arguments
