@@ -1,7 +1,6 @@
 #Final Project Day 8 - Caesar Cipher
 #25nd October 2024
 #Her link: https://appbrewery.github.io/python-day8-demo
-import caesar_cipher_logo
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
