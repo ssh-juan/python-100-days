@@ -1,4 +1,4 @@
-# My Studies about Python
+# My Python Studies
 Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
 
 ### "Our brain is for thinking, not for storing"
