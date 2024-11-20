@@ -129,6 +129,12 @@ while something_is_true:
 | == | Equal to |
 | != | Not Equal to |
 
+## Dictionaries
+- Structure - Key: Value
+```py
+empty_dictionary = {}
+```
+
 ## Main Libraries Used
 - `random` - Randomisation
     - RANDOM CHOICE ON A LIST = `random.choice(list_name)`
@@ -155,6 +161,8 @@ while something_is_true:
 6. Escaping the Maze - Reeborg's World
     - Functions, Code Blocks and While Loops
 7. Hangman Project
-    - Flow chart programming
+    - Flow Chart Programming
 8. Caesar Cipher
     - Functions with Inputs, Parameters and Arguments
+9. Blind Auction Program
+    - Dictionaries & Nesting
