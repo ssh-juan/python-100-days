@@ -4,6 +4,8 @@
 
 #My solution only watching the first explanation
 import random
+from os import system
+import art
 
 run = True
 while run:
@@ -12,6 +14,8 @@ while run:
     end = False
     play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
     if play in ("Y","y"):
+        system("cls")
+        print(art.logo)
         for num in range(2):
             user_cards.append(random.randint(1,10))
         #print(user_cards)
