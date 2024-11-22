@@ -173,5 +173,8 @@ empty_dictionary = {}
     - Flow Chart Programming
 8. Caesar Cipher
     - Functions with Inputs, Parameters and Arguments
-9. Blind Auction Program
+9. [Blind Auction Program](https://github.com/ssh-juan/python-100-days/tree/master/day-09_blind-auction-program)
     - Dictionaries & Nesting
+10. [Calculator App](https://github.com/ssh-juan/python-100-days/tree/master/day-10_calculator_app)
+    - Functions with Outputs
+11. [Blackjack Game](https://github.com/ssh-juan/python-100-days/tree/master/day-11_blackjack)
