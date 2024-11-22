@@ -151,6 +151,12 @@ empty_dictionary = {}
     - RANDOM FLOAT INTERVAL = `random.uniform(a, b)` Range from 'a' to 'b'
     - RANDOM FLOAT 0 TO 1 = `random.random()` Range from 0 to 1
     - RANDOM SHUFFLE - `random.shuffle(list_name)` Shuffles the order of the list
+- `os` - Operational System
+    - Clear terminal (example for Windows)
+    ```py
+    from os import system
+    system("cls")
+    ```
 
 ## Useful Tips
 - There's a tip for an IDE called "Thonny". It helps to debug code easier for newbies.
