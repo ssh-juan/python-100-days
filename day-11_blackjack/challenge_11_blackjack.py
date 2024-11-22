@@ -9,6 +9,7 @@ run = True
 while run:
     user_cards = []
     computer_cards = []
+    end = False
     play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
     if play in ("Y","y"):
         for num in range(2):
