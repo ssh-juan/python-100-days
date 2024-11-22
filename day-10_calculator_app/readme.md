@@ -10,7 +10,7 @@ def my_function():
 
     return result
 ```
-- .title()
+- `.title()`
     - Function to make all first letters on each word in Capital Letters.
 
 ### Final Project
