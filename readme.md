@@ -28,6 +28,7 @@ x = points.count(9)
 ```
 - ROUND A NUMBER = `round(number, ndigits)`  
 - CONVERT TO LOWERCASE = `.lower()` (Example: `input().lower()`)  
+- CONVERT FIRST LETTERS TO CAPITAL LETTERS = `.title()` (Example: `input().title()`)  
 - Lists - `fruits = [item1, item2]`
 - ADD ONE ITEM IN A LIST = `.append()` (Example: `states_of_usa.append("New Jersey")`)
 - ADD SOME ITEMS IN A LIST = `.extend()` (Example: `states_of_usa.extend(["Georgia","Connecticut"])`)
@@ -91,6 +92,14 @@ def my_function(a, b, c):
     #Do this with 'a'
     #Then do this with 'b'
     #Finally do this 'c'
+```
+- Functions with Outputs
+    - Functions which allows you to have an output once the function is completed.
+```py
+def my_function():
+    result = 3 * 2
+
+    return result
 ```
 - WHILE LOOP
 ```python
