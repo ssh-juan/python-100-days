@@ -184,3 +184,5 @@ empty_dictionary = {}
 10. [Calculator App](https://github.com/ssh-juan/python-100-days/tree/master/day-10_calculator_app)
     - Functions with Outputs
 11. [Blackjack Game](https://github.com/ssh-juan/python-100-days/tree/master/day-11_blackjack)
+12. [Number Guessing Game](https://github.com/ssh-juan/python-100-days/tree/master/day-12_number_guessing_project)
+    - Scope
