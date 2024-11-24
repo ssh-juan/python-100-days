@@ -1,4 +1,5 @@
 def is_prime(num):
+    #return if the input number is a prime number
     # Eliminar casos triviais
     if num <= 1:  # Números menores ou iguais a 1 não são primos
         return False
@@ -17,6 +18,7 @@ def is_prime(num):
 
 
 def numero_primo(number):
+    """Retorna se o número de input é um número primo"""
     if number >= 1:
         for i in range(1, number):
             if number % i != 0:

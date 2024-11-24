@@ -1,5 +1,5 @@
 # Day 12 - 22nd November 2024
-
+- Scope
 
 ## Lessons Learned
 - Scope
@@ -10,4 +10,4 @@
 
 
 ### Final Project
-Number Guessing Project
+Number Guessing Game
