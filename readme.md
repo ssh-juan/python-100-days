@@ -7,9 +7,6 @@ All projects are available listed [at the end of this Readme](#Projects).
 
 ### "Our brain is for thinking, not for storing"
 
-### Useful Links
-- [Link to Generate ASCII Arts](https://patorjk.com/software/taag)
-
 ### Python Primitive Data Types
 1. Strings
 2. Integers
@@ -164,10 +161,50 @@ empty_dictionary = {}
     from os import system
     system("cls")
     ```
+- `try` and `except`
+    - `try` - This is where you write the code that could potentially raise an exception.
+    - `except` - If an error occurs in the try block, the program jumps here to handle the error instead of crashing.
+    
+    - Example 1: Handling Division by Zero
+python
+```py
+#Example 1: Handling Division by Zero
+try:
+    result = 10 / 0  # This will cause a ZeroDivisionError
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+```
+
+- Example 2: Catching Multiple Exceptions
+You can handle different errors with multiple except blocks:
+```py
+#Example 2: Catching Multiple Exceptions
+try:
+    number = int("abc")  # This will cause a ValueError
+except ValueError:
+    print("That's not a valid number!")
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+```
+
+- Example 3: Generic Exception Handling
+
+If you’re unsure which exception might occur, you can catch all exceptions with a generic except:
+
+```py
+#Example 3: Generic Exception Handling
+try:
+    risky_code()
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
 
 ## Useful Tips
-- There's a tip for an IDE called "Thonny". It helps to debug code easier for newbies.
+- [Easy Debugger - Python Tutor](https://pythontutor.com/visualize.html#mode=edit)
+- [Easy Debugger - Thonny](https://thonny.org/)
 - [ASCII Art Generator](https://ascii.co.uk/art)
+- [Another ASCII Art Generator](https://patorjk.com/software/taag)
 
 ## Projects
 1. Band Name Generator
@@ -193,3 +230,4 @@ empty_dictionary = {}
 11. [Blackjack Game](https://github.com/ssh-juan/python-100-days/tree/master/day-11_blackjack)
 12. [Number Guessing Game](https://github.com/ssh-juan/python-100-days/tree/master/day-12_number_guessing_project)
     - Scope: Local Scope and Global Scope
+13. [Debugging](https://github.com/ssh-juan/python-100-days/tree/master/day-13_debugging)
