@@ -1,5 +1,5 @@
 #Final Project Day 12 - Number Guessing Game
-#28nd November 2024
+#28th November 2024
 #Her link: https://appbrewery.github.io/python-day12-demo
 
 #Her solution
