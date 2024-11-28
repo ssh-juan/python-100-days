@@ -1,7 +1,14 @@
 # My Python Studies
-Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/)
+![repo logo](<repo_icon.png>)
+
+My Studies Following [Angela Yu's Course](https://www.udemy.com/course/100-days-of-code/).  100 different projects will be built.
+
+All projects are available listed [at the end of this Readme](#Projects).
 
 ### "Our brain is for thinking, not for storing"
+
+### Useful Links
+- [Link to Generate ASCII Arts](https://patorjk.com/software/taag)
 
 ### Python Primitive Data Types
 1. Strings
@@ -185,4 +192,4 @@ empty_dictionary = {}
     - Functions with Outputs
 11. [Blackjack Game](https://github.com/ssh-juan/python-100-days/tree/master/day-11_blackjack)
 12. [Number Guessing Game](https://github.com/ssh-juan/python-100-days/tree/master/day-12_number_guessing_project)
-    - Scope
+    - Scope: Local Scope and Global Scope
