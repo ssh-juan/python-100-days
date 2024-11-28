@@ -7,7 +7,8 @@
     - There's 2 types of scope:
         - Local Scope
         - Global Scope
-
+- Constant Variables: Write it in UPPERCASE
+- Link to generate Characters for arts: https://patorjk.com/software/taag
 
 ### Final Project
 Number Guessing Game
