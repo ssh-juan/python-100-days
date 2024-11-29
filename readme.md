@@ -114,6 +114,43 @@ while something_is_true:
     - FOR LOOPS: Really good when you need to iterate over something and you need to do something with **EACH THING** that you're iterating over.
     - WHILE: Good to just simply wants to carry out a functionality until a certain condition.
         - While loops are more dangerous, due to possible Infinite Loops.
+- `try` and `except`
+    - `try` - This is where you write the code that could potentially raise an exception.
+    - `except` - If an error occurs in the try block, the program jumps here to handle the error instead of crashing.
+    
+    - Example 1: Handling Division by Zero
+python
+```py
+#Example 1: Handling Division by Zero
+try:
+    result = 10 / 0  # This will cause a ZeroDivisionError
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+```
+
+- Example 2: Catching Multiple Exceptions
+You can handle different errors with multiple except blocks:
+```py
+#Example 2: Catching Multiple Exceptions
+try:
+    number = int("abc")  # This will cause a ValueError
+except ValueError:
+    print("That's not a valid number!")
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+```
+
+- Example 3: Generic Exception Handling
+
+If you’re unsure which exception might occur, you can catch all exceptions with a generic except:
+
+```py
+#Example 3: Generic Exception Handling
+try:
+    risky_code()
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
 
 ## Mathematical Operators
 - ADDITION: `+`  
@@ -161,44 +198,6 @@ empty_dictionary = {}
     from os import system
     system("cls")
     ```
-- `try` and `except`
-    - `try` - This is where you write the code that could potentially raise an exception.
-    - `except` - If an error occurs in the try block, the program jumps here to handle the error instead of crashing.
-    
-    - Example 1: Handling Division by Zero
-python
-```py
-#Example 1: Handling Division by Zero
-try:
-    result = 10 / 0  # This will cause a ZeroDivisionError
-except ZeroDivisionError:
-    print("You can't divide by zero!")
-```
-
-- Example 2: Catching Multiple Exceptions
-You can handle different errors with multiple except blocks:
-```py
-#Example 2: Catching Multiple Exceptions
-try:
-    number = int("abc")  # This will cause a ValueError
-except ValueError:
-    print("That's not a valid number!")
-except ZeroDivisionError:
-    print("You can't divide by zero!")
-```
-
-- Example 3: Generic Exception Handling
-
-If you’re unsure which exception might occur, you can catch all exceptions with a generic except:
-
-```py
-#Example 3: Generic Exception Handling
-try:
-    risky_code()
-except Exception as e:
-    print(f"An error occurred: {e}")
-```
-
 
 ## Useful Tips
 - [Easy Debugger - Python Tutor](https://pythontutor.com/visualize.html#mode=edit)
@@ -207,21 +206,21 @@ except Exception as e:
 - [Another ASCII Art Generator](https://patorjk.com/software/taag)
 
 ## Projects
-1. Band Name Generator
+1. [Band Name Generator](https://github.com/ssh-juan/python-100-days/tree/master/day-01_band_name_generator)
     - Printing, Commenting, Debugging, String Manipulation and Variables
-2. Tip Calculator
+2. [Tip Calculator](https://github.com/ssh-juan/python-100-days/tree/master/day-02_tip_calculator)
     - Data Types, Numbers, Operations, Type Conversion, f-string
-3. Treasure Island - Game
+3. [Treasure Island - Game](https://github.com/ssh-juan/python-100-days/tree/master/day-03_treasure_island)
     - Conditional Statements, Logical Operators, Code Blocks and Scope
-4. Rock-Paper-Scissors - Game
-    - Randomisation and Python Lists
-5. Password Generator
+4. [Rock-Paper-Scissors - Game](https://github.com/ssh-juan/python-100-days/tree/master/day-04_rock_paper_scissors)
+    - Randomization and Python Lists
+5. [Password Generator](https://github.com/ssh-juan/python-100-days/tree/master/day-05_password_generator)
     - For Loops, Range and Code Block
-6. Escaping the Maze - Reeborg's World
+6. [Escaping the Maze - Reeborg's World](https://github.com/ssh-juan/python-100-days/tree/master/day-06_escaping_the_maze_--comeback-after-day-15)
     - Functions, Code Blocks and While Loops
-7. Hangman Project
+7. [Hangman Project](https://github.com/ssh-juan/python-100-days/tree/master/day-07_hangman_project)
     - Flow Chart Programming
-8. Caesar Cipher
+8. [Caesar Cipher](https://github.com/ssh-juan/python-100-days/tree/master/day-08_caesar_cipher)
     - Functions with Inputs, Parameters and Arguments
 9. [Blind Auction Program](https://github.com/ssh-juan/python-100-days/tree/master/day-09_blind-auction-program)
     - Dictionaries & Nesting
@@ -231,3 +230,4 @@ except Exception as e:
 12. [Number Guessing Game](https://github.com/ssh-juan/python-100-days/tree/master/day-12_number_guessing_project)
     - Scope: Local Scope and Global Scope
 13. [Debugging](https://github.com/ssh-juan/python-100-days/tree/master/day-13_debugging)
+14. [Higher or Lower](https://github.com/ssh-juan/python-100-days/tree/master/day-14_higher_or_lower)
