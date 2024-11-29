@@ -2,7 +2,7 @@
 #28th November 2024
 #Her link: https://appbrewery.github.io/python-day14-demo
 
-#v2 using function compare()
+#v3 using 'random.choice' instead of using 'randint'
 
 import random
 import art
@@ -18,7 +18,7 @@ def compare(rand_a, rand_b):
     choice = input("Who has more followers? Type 'A' or 'B': ")
     system("cls")
     if choice in ("A","a"):
-        if game_data.data[rand_a]["follower_count"] > game_data.data[rand_b]["follower_count"]:
+        if rand_a["follower_count"] > rand_b["follower_count"]:
             score += 1
             print(f"You're Right! Current Score: {score}")
             return score
@@ -27,7 +27,7 @@ def compare(rand_a, rand_b):
             print(f"Sorry, that's wrong. Final score: {score}")
             return score, missed
     elif choice in ("B", "b"):
-        if game_data.data[rand_b]["follower_count"] > game_data.data[rand_a]["follower_count"]:
+        if rand_b["follower_count"] > rand_a["follower_count"]:
             score += 1
             print(f"You're Right! Current Score: {score}")
             return score
@@ -37,13 +37,13 @@ def compare(rand_a, rand_b):
             return score, missed
 
 while missed == False:
-    rand_a = random.randint(0,49)
-    rand_b = random.randint(0,49)
+    rand_a = random.choice(game_data.data)
+    rand_b = random.choice(game_data.data)
 
-    print(art.logo)
-    print(f"Compare A: {game_data.data[rand_a]["name"]}, a {game_data.data[rand_a]["description"]}, from {game_data.data[rand_a]["country"]}.")
+    #print(art.logo)
+    print(f"Compare A: {rand_a["name"]}, a {rand_a["description"]}, from {rand_a["country"]}.")
 
     print(art.vs)
-    print(f"Compare B: {game_data.data[rand_b]["name"]}, a {game_data.data[rand_b]["description"]}, from {game_data.data[rand_b]["country"]}.")
+    print(f"Compare B: {rand_b["name"]}, a {rand_b["description"]}, from {rand_b["country"]}.")
 
     compare(rand_a, rand_b)
