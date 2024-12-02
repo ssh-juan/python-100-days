@@ -1,6 +1,9 @@
 #Day 15 - Coffee Machine Project
 #29th November 2024
 
+#My solution
+import art
+
 MENU = {
     "espresso": {
         "ingredients": {
@@ -31,31 +34,56 @@ resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
+    "money": 0 #
 }
 
 def print_report():
     print(f"Water: {resources["water"]}ml")
     print(f"Milk: {resources["milk"]}ml")
     print(f"Coffee: {resources["coffee"]}g")
-    #if money not none and > 0
-        #print(money??)
+    print(f"Money: {resources["money"]}$")
+    #if resources["money"] is not None and resources["money"]> 0:
+    #    print(f"Money: {resources["money"]}$")
 
 def check_resources(choice):
     """Check if there is enough resources the produce the drink."""
     if choice == "cappuccino":
-        if resources["water"] >= 250 and resources["milk"] >= 100 and resources["coffee"] >= 24:
-            return 0
+        if resources["water"] >= 250:
+            if resources["milk"] >= 100:
+                if resources["coffee"] >= 24:
+                    return 0
+                else:
+                    print("There is not enough coffee. =(")
+                    return 1
+            else:
+                print("There is not enough milk. =(")
+                return 1
         else:
+            print("There is not enough water. =(")
             return 1
     elif choice == "latte":
-        if resources["water"] >= 200 and resources["milk"] >= 150 and resources["coffee"] >= 24:
-            return 0
+        if resources["water"] >= 200:
+            if resources["milk"] >= 150:
+                if resources["coffee"] >= 24:
+                    return 0
+                else:
+                    print("There is not enough coffee. =(")
+                    return 1
+            else:
+                print("There is not enough milk. =(")
+                return 1
         else:
+            print("There is not enough water. =(")
             return 1
     elif choice == "espresso":
-        if resources["water"] >= 50 and resources["coffee"] >= 18:
-            return 0
+        if resources["water"] >= 50:
+            if resources["coffee"] >= 18:
+                return 0
+            else:
+                print("There is not enough coffee. =(")
+                return 1
         else:
+            print("There is not enough water. =(")
             return 1
 
 def validate_coins():
@@ -71,12 +99,14 @@ def validate_coins():
 
     if total >= MENU[choice]["cost"]:
         if total == MENU[choice]["cost"]:
+            resources["money"] += MENU[choice]["cost"]
             return 0
         else:
             change = total - MENU[choice]["cost"]
-            return change
+            resources["money"] += MENU[choice]["cost"]
+            return 0, change
     else:
-        return 999
+        return 1
 
 def deduct_resources(choice):
     if choice == "cappuccino":
@@ -97,20 +127,23 @@ def deduct_resources(choice):
 change = 0
 machine_on = True
 
+print(art.logo)
 while machine_on:
     choice = input("What would you like? (espresso/latte/cappuccino) ").lower()
     if choice == "report":
         print_report()
     elif choice in ("espresso", "latte", "cappuccino"):
         if check_resources(choice) == 0:
-            if validate_coins() != 999:
+            if validate_coins() != 1:
                 deduct_resources(choice)
                 if change > 0:
                     print(f"Here is your ${round(change,2)} in change.")
                     change = 0
                 print(f"Here is your {choice}☕. Enjoy! =)")
+            else:
+                print("Sorry, that's not enough money. Money refunded.")
         else:
-            print(f"There is not enough resources to make {choice}.")
+            1 == 1 #nothing
     elif choice == "off":
         print("Turning machine off.")
         machine_on = False

@@ -8,7 +8,8 @@
 5. Make Coffee
 6. Deduct Resources
 
-
+## Useful Link
+[Emojipedia](https://emojipedia.org/)
 
 ## Lessons Learned
 
