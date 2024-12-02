@@ -44,37 +44,39 @@ def check_resources(choice):
     """Check if there is enough resources the produce the drink."""
     if choice == "cappuccino":
         if resources["water"] >= 250 and resources["milk"] >= 100 and resources["coffee"] >= 24:
-            return "ok"
+            return 0
         else:
-            return "not enough resources"
+            return 1
     elif choice == "latte":
         if resources["water"] >= 200 and resources["milk"] >= 150 and resources["coffee"] >= 24:
-            return "ok"
+            return 0
         else:
-            return "not enough resources"
+            return 1
     elif choice == "espresso":
         if resources["water"] >= 50 and resources["coffee"] >= 18:
-            return "ok"
+            return 0
         else:
-            return "not enough resources"
+            return 1
 
 def validate_coins():
     """Validates if the amount of coins is enough to buy the drink."""
     print("Please insert coins.")
-    quarters = input("How many quarters (25¢)?: ")
-    dimes = input("How many dimes (10¢)?: ")
-    nickles = input("How many nickles (5¢)?: ")
-    pennies = input("How many pennies (1¢)?: ")
+    global change
+
+    quarters = int(input("How many quarters (25¢)?: "))
+    dimes = int(input("How many dimes (10¢)?: "))
+    nickles = int(input("How many nickles (5¢)?: "))
+    pennies = int(input("How many pennies (1¢)?: "))
     total = (quarters * 0.25) + (dimes * 0.10) + (nickles * 0.05) + (pennies * 0.01)
 
     if total >= MENU[choice]["cost"]:
         if total == MENU[choice]["cost"]:
-            return "ok"
+            return 0
         else:
-            payback = total - MENU[choice]["cost"]
-            return payback
+            change = total - MENU[choice]["cost"]
+            return change
     else:
-        return "not enough money"
+        return 999
 
 def deduct_resources(choice):
     if choice == "cappuccino":
@@ -92,19 +94,25 @@ def deduct_resources(choice):
         resources["coffee"] -= 18
         return resources
 
-print(MENU["cappuccino"]["ingredients"]["water"])
-MENU["cappuccino"]["ingredients"]["water"] -= 1
-print(MENU["cappuccino"]["ingredients"]["water"])
+change = 0
+machine_on = True
 
-choice = input("What would you like? (espresso/latte/cappuccino) ").lower()
-if choice == "report":
-    print_report()
-elif choice in ("espresso", "latte", "cappuccino"):
-    check_resources(choice)
-    validate_coins()
-    deduct_resources(choice)
-    
-elif choice == "off":
-    print("Turning machine off.")
-else:
-    print("You inserted an invalid input. Type again.")
+while machine_on:
+    choice = input("What would you like? (espresso/latte/cappuccino) ").lower()
+    if choice == "report":
+        print_report()
+    elif choice in ("espresso", "latte", "cappuccino"):
+        if check_resources(choice) == 0:
+            if validate_coins() != 999:
+                deduct_resources(choice)
+                if change > 0:
+                    print(f"Here is your ${round(change,2)} in change.")
+                    change = 0
+                print(f"Here is your {choice}☕. Enjoy! =)")
+        else:
+            print(f"There is not enough resources to make {choice}.")
+    elif choice == "off":
+        print("Turning machine off.")
+        machine_on = False
+    else:
+        print("You inserted an invalid input. Type again.")
