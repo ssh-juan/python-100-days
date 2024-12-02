@@ -199,13 +199,15 @@ empty_dictionary = {}
     system("cls")
     ```
 
-## Useful Tips
+## Useful Tips and Links
 - [Easy Debugger - Python Tutor](https://pythontutor.com/visualize.html#mode=edit)
 - [Easy Debugger - Thonny](https://thonny.org/)
 - [ASCII Art Generator](https://ascii.co.uk/art)
 - [Another ASCII Art Generator](https://patorjk.com/software/taag)
+- [Emojipedia](https://emojipedia.org/)
 
 ## Projects
+### Beginner
 1. [Band Name Generator](https://github.com/ssh-juan/python-100-days/tree/master/day-01_band_name_generator)
     - Printing, Commenting, Debugging, String Manipulation and Variables
 2. [Tip Calculator](https://github.com/ssh-juan/python-100-days/tree/master/day-02_tip_calculator)
@@ -231,3 +233,6 @@ empty_dictionary = {}
     - Scope: Local Scope and Global Scope
 13. [Debugging](https://github.com/ssh-juan/python-100-days/tree/master/day-13_debugging)
 14. [Higher or Lower](https://github.com/ssh-juan/python-100-days/tree/master/day-14_higher_or_lower)
+
+### Intermediate
+15. [Coffee Machine Project](https://github.com/ssh-juan/python-100-days/tree/master/day-15_coffee_machine)
