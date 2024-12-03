@@ -9,4 +9,9 @@ OOP - Object Oriented Programming
 - OOP / POO
     - Split a larger task into smaller pieces
 
+- Packages
+    - A package differs from a module in the sense that it's actually a whole bunch of code.
+    - [PyPI - Python Package Index](https://pypi.org/)
+    - PrettyTable Package
+
 ### Final Project
