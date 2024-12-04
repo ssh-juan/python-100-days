@@ -1,5 +1,7 @@
 # Understanding OOP
 It's called Object Oriented Programming because it is trying to model a real world object.
+"Uma maneira de conseguir organizar seu código de uma forma melhor, mais escalável"
+"Encapsular tudo que faz sentido para um contexto dentro de um objeto que consiga representar esse contexto"
 For example, a "virtual restaurant" would have:
 - A virtual Chef
 - A virtual Waiter
