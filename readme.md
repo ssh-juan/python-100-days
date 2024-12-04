@@ -205,6 +205,8 @@ empty_dictionary = {}
 - [ASCII Art Generator](https://ascii.co.uk/art)
 - [Another ASCII Art Generator](https://patorjk.com/software/taag)
 - [Emojipedia](https://emojipedia.org/)
+- [PyPI - Python Package Index](https://pypi.org/)
+
 
 ## Projects
 ### Beginner
@@ -236,3 +238,5 @@ empty_dictionary = {}
 
 ### Intermediate
 15. [Coffee Machine Project](https://github.com/ssh-juan/python-100-days/tree/master/day-15_coffee_machine)
+16. [OOP Coffee Machine Project](https://github.com/ssh-juan/python-100-days/tree/master/day-16_oop_object_oriented_programming)
+    - OOP - Object Oriented Programming
