@@ -14,7 +14,7 @@ For example, a "virtual restaurant" would have:
     is_holding_plate = True
     tables_responsible = [4,5,6]
     ```
-    - does - methods (are functions, what an object can do)
+    - does - **methods** (are functions, what an object can do)
     ```py
     def take_order(table, order):
         #takes order to chef
@@ -22,12 +22,12 @@ For example, a "virtual restaurant" would have:
         #add money to restaurant
     ```
 
-##
+## Example
 Objeto: Bolo  
 Classe: Receita do Bolo  
 ![alt text](./imgs/image-4.png)
 
-Objeto: Carro específico  
+Objeto: Modelo do Carro
 Classe: Carro  
 ![alt text](./imgs/image-5.png)
 
