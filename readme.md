@@ -198,6 +198,16 @@ empty_dictionary = {}
     from os import system
     system("cls")
     ```
+- `logging` - Logging
+    ```py
+    import logging
+    
+    logging.debug("Debug")
+    logging.info("Info")
+    logging.warning("Warning")
+    logging.error("Error")
+    logging.critical("Critical")
+    ```
 
 ## Useful Tips and Links
 - [Easy Debugger - Python Tutor](https://pythontutor.com/visualize.html#mode=edit)
@@ -240,3 +250,5 @@ empty_dictionary = {}
 15. [Coffee Machine Project](https://github.com/ssh-juan/python-100-days/tree/master/day-15_coffee_machine)
 16. [OOP Coffee Machine Project](https://github.com/ssh-juan/python-100-days/tree/master/day-16_oop_object_oriented_programming)
     - OOP - Object Oriented Programming
+17. [Quiz Game](https://github.com/ssh-juan/python-100-days/tree/master/day-17_quiz_game)
+    - Creating Classes...+++
